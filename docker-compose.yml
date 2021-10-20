@@ -4,7 +4,7 @@ services:
        
 
         db:
-                image: db:latest
+                image: localhost:5000/db:latest
                 ports:
                         - "3301:3301"
                 volumes:
@@ -14,7 +14,7 @@ services:
                 container_name: db-serv
 
         information:
-                image: inf-image:latest
+                image: localhost:5000/inf-image:latest
                 ports:
                         - "8079:8081"
                 networks:
@@ -23,14 +23,14 @@ services:
 
 
         registration:
-                image: reg-image:latest
+                image: localhost:5000/reg-image:latest
                 ports:
                         - "8080:8080"
                 networks:
                         - service-net
                 container_name: reg-serv
         nginx:
-                image: nginx-serv:latest
+                image: localhost:5000/nginx-serv:latest
                 ports:
                         - "80:80"
                 networks:
