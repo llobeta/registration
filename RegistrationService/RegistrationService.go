@@ -111,7 +111,7 @@ func processRequest(w http.ResponseWriter, r *http.Request) {
 
 	}
 
-	/* Logging purposes */
+	/* Logging purposess */
 	log.Print(fmt.Sprintf("[REQUESTED] Car ID: %s Car Brand: %s Car Model: %s, Car HP: %s",
 		car.ID, car.Brand, car.Model, car.HP))
 }
