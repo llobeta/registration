@@ -33,7 +33,7 @@ func read_config() Configuration {
 		err := file.Close()
 		if err != nil {
 			fmt.Println("error:", err)
-		}
+		}/* j */
 	}(file)
 	decoder := json.NewDecoder(file)
 	configuration := Configuration{}
